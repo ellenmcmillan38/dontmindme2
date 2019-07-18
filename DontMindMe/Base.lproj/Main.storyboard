@@ -230,10 +230,10 @@
             </objects>
             <point key="canvasLocation" x="1042.0289855072465" y="118.52678571428571"/>
         </scene>
-        <!--View Controller-->
+        <!--To Do List View Controller-->
         <scene sceneID="NIb-KG-sxf">
             <objects>
-                <viewController id="bSm-kn-xiQ" sceneMemberID="viewController">
+                <viewController id="bSm-kn-xiQ" customClass="ToDoListViewController" customModule="DontMindMe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bdo-6B-lwb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -271,6 +271,21 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <state key="normal" title="⏰"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yKr-Ea-pGS">
+                                <rect key="frame" x="78" y="253" width="259" height="194"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Unknown"/>
+                                <connections>
+                                    <action selector="toDoList:" destination="bSm-kn-xiQ" eventType="touchUpInside" id="vVO-6j-bsH"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Click on the picture to access your online to-do list!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UM1-6h-gkC">
+                                <rect key="frame" x="67" y="555" width="253" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.92467224597930908" green="0.86107200384140015" blue="0.99098402261734009" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="zx2-mF-WYH"/>
@@ -278,7 +293,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5ph-Pn-P7N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1116" y="974"/>
+            <point key="canvasLocation" x="1114.4927536231885" y="973.66071428571422"/>
         </scene>
         <!--Care Tips View Controller-->
         <scene sceneID="6xC-Wd-ySs">
@@ -434,6 +449,9 @@
             <point key="canvasLocation" x="2076" y="109"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Unknown" width="259" height="194"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="NZG-Uq-aRs"/>
         <segue reference="IS3-1s-Xln"/>
